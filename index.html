@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <title>文件加密解密</title>
+</head>
+
+<body>
+    <div class="container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+
+            <div class="col sm-12 col-md-8 col-lg-6">
+                <h3 class="display-5 title">文件加密</h3>
+                <!-- <p class="lead">
+                    A Free,
+                    <u>Fast</u>,
+                    <u>Secure</u> and
+                    <u>Serverless</u> File Encryption.
+                </p> -->
+
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">
+                        <div id="file-placeholder">上传文件加密/解密</div>
+                    </label>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <label for="inputPassword"></label>
+                        <input type="text" id="inputPassword"
+                            placeholder="输入或生成一个密钥"
+                            class="form-control mx-sm-6" aria-describedby="passwordHelpInline">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="generateButton"
+                                data-toggle="tooltip" data-placement="right" title="生成密钥"><i
+                                    class="fas fa-sync-alt"></i></button>
+                        </div>
+                    </div>
+
+                    <small id="passwordHelpInline" class="text-muted">
+                        <b>强度</b>: <span id="strength-text"></span>
+                    </small>
+                    <div class="progress progress-sm">
+                        <div class="progress-bar bg-secondary" id="strength-meter" role="progressbar" style="width: 4;"
+                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="4"></div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-outline-dark" id="encryptBtn">加密</button>
+                <button type="button" class="btn btn-outline-dark" id="decryptBtn">解密</button>
+                <button type="button" class="btn btn-outline-danger" id="resetBtn" style="display: none"><i
+                        class="fas fa-redo"></i> 重置</button>
+                <br>
+                <small class="text-muted">
+                    文件不会上传到服务器，所有操作都在浏览器中本地完成。
+                </small>
+                <br>
+                <br>
+
+                <div id="error"></div>
+
+            </div>
+            <!--end col-->
+        </div><!-- end row -->
+        <br>
+        <br>
+
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-sm-12 col-md-8 col-lg-6" id="results">
+
+
+
+            </div>
+            <!--end col-->
+        </div><!-- end row -->
+
+    </div><!-- end container -->
+    <br>
+
+    <div class="loader">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+    </div>
+    <!-- bundled app file js -->
+    <script src="bundle.js"></script>
+    <!-- <script src="/src/js/app.js"></script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <title>About Hat.sh | Hat.sh | The Hat Project</title>
+    <meta name="Description" content="encrypt and decrypt files securely in your browser using the AES 256 algorithm.">
+    <meta name="Keywords"
+        content="encrypt decrypt encryption file-encryption javascript client-side serverless decryption aes aes-encryption aes-256 aes-128 encryption-decryption webcrypto webcryptoapi crypto browser in-browser">
+
+</head>
+
+<body>
+
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link disabled" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" target="_blank" href="https://ko-fi.com/shdvapps">Donate</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="https://github.com/sh-dv/hat.sh" target="_blank"><i
+                    class="fab fa-github fa-lg"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled"
+                href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fpublish.twitter.com%2F%3FbuttonType%3DTweetButton%26widget%3DButton&ref_src=twsrc%5Etfw&text=Check%20Out%20This%20File%20Encryption%20app%20App:%20https://hat.sh"
+                target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+        </li>
+    </ul>
+
+
+    <div class="jumbotron jumbotron-fluid bg-light">
+        <div class="container">
+            <h2 class="display-4 title">About <a href="/">Hat.sh</a></h2>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="col-sm-12">
+            
+            <p class="lead">
+                this is a javascript app that provides secure file encryption using the <a
+                    href="https://www.w3.org/TR/WebCryptoAPI/#aes-gcm">AES-256-GCM</a> algorithm from <a href="
+                https://www.w3.org/TR/WebCryptoAPI/#aes-gcm">WebCryptoAPI</a> included in your browser.<br>
+
+                It's <u>fast</u>, <u>secure</u> and <u>Serverless</u>, the app never uploads the files to the
+                server.<br>
+
+                in a small amount of code the app can encrypt any type of files at any size within seconds.<br>
+
+                To use the app all you have to do is <u>Browse</u> a file , <u>Type</u> a Decryption Key or
+                <u>Generate</u> one through our secure key generator . and your encrypted file is ready to download.
+
+            </p>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid bg-light">
+        <div class="container">
+            <h2 class="display-4 title">How does it work?</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col-sm-12">
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Password</h5>
+                        <p class="card-text">(password-based key derivation)<br>deriving a cryptographic key from the
+                            given password
+                            using the PBKDF2 algorithm which is executed 100k times</p>
+                        <p class="card-text">
+                            <center><b>1</b></center>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Cryptographic key</h5>
+                        <p class="card-text">combining the password entered and a password-based salt and the iterations
+                            to create a cryptographic key<br><small
+                                class="text-muted">(pjRxtpw3j3IQV2wsTzuj7QlThozYCKlIc28PX..)</small></p>
+                        <p class="card-text">
+                            <center><b>2</b></center>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Encrypted file</h5>
+                        <p class="card-text">loading the selected file content and running the encryption algorithm with
+                            the derived cryptographic key in combination with a number used once to implement randomised
+                            encryption</p>
+                        <p class="card-text">
+                            <center><b>3</b></center>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="jumbotron jumbotron-fluid bg-light">
+        <div class="container">
+            <h2 class="display-4 title">FAQ</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col-sm-12">
+            <h5>Are there log files or type of records?</h5>
+                <p><b>NO.</b> hat.sh never stores any files or passwords, it all happens locally in your browser.</p>
+                <br>
+                <h5>Is the app free?</h5>
+                    <p><b>YES.</b> hat.sh is free and always will be, we depend only on <a
+                            href="https://ko-fi.com/shdvapps">donations</a></p>
+                    <br>
+                    <h5>How to use?</h5>
+                        <p>it's very simple, browse a file, generate a key or type one, click the button!.</p>
+                        <br>
+                        <h5>Is there a file type or size limit?</h5>
+                            <p>No, the app accepts any type at any size.</p>
+                            <br>
+                            <h5>Is it secure?</h5>
+                                <p>Yes, the app encrypts the file using the <a
+                                        href="https://www.w3.org/TR/WebCryptoAPI/#aes-gcm">AES-GCM</a> algorithm
+                                    provided by the Web Crypto.<br> everything is done offline in your browser. No data
+                                    is going to be sent to any server</p>
+                                <br>
+                                <h5>I forgot my Encryption Key, can i restore it?</h5>
+                                    <p><B>NO</B> as mentioned above, we don't keep any data. once you encrypt a file
+                                        make sure to save the Key.</p>
+                                    </p>
+                                    <br>
+                                    <h5>How can i contribute?</h5>
+                                    <p>Hat.sh is an <a href="https://github.com/sh-dv/hat.sh">open-source app</a>, it's
+                                        currently in the beta version, you can help making it better by commiting. it's
+                                        maintained only in the free time , Will appreciate your help by donating.</p>
+                                    <br>
+        </div>
+
+
+        <!-- end col -->
+
+    </div>
+    <!-- end container -->
+
+    <div class="footer">
+        <nav class="navbar  navbar-light bg-light">
+            <ul class="nav navbar-nav mx-auto">
+                <li class="nav-item">
+                    <div class="nav-link">built and developed with <i class="fas fa-heart" style="color:#e74c3c;"></i>
+                        by <a href="https://github.com/sh-dv" class="text-dark"> Shadi.</a>
+                        <br> BTC:<a href="bitcoin:39DZXSrBuDN9ttTSnFDaaFcg4mix1MAXRQ"
+                            class="text-white bg-secondary">39DZXSrBuDN9ttTSnFDaaFcg4mix1MAXRQ</a></div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 npm install -g browserify
-
+browserify src/js/app.js -o bundle.js
 
 <p align="center">
   <a href="#" rel="noopener">

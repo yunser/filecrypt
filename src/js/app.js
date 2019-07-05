@@ -1,7 +1,8 @@
 //require the dependencies
-const bootstrap = require('bootstrap');
-var $ = require("jquery");
-const popperjs = require('popper.js');
+// const bootstrap = require('bootstrap');
+// const bootstrap = require('bootstrap');
+// var $ = require("jquery");
+// const popperjs = require('popper.js');
 const zxcvbn = require('zxcvbn');
 
 //file input events
